@@ -2,6 +2,7 @@
   --color-primary: #8E2424;
   --color-secondary: #667085;
   --color-text: #3A404E;
+  --color-text-secondary: #101828;
   --font-family: 'Inter', sans-serif;
   --font-size-normal: 16px;
   --font-size-large: 18px;
@@ -103,4 +104,36 @@ header {
   text-align: center;
   font-size: 20px;
   line-height: 30px;
+}
+
+#metricas {
+  display: flex;
+  padding-bottom: 96px;
+  gap: 64px;
+  margin: 0px 80px;
+}
+
+#metricas .metricas_card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1 0 0;
+}
+
+.metricas_card > span {
+  color: var(--color-primary);
+  font-weight: 600;
+  font-size: 60px;
+}
+
+.metricas_card > h2 {
+  color: var(--color-text-secondary);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.metricas_card > p {
+  color: var(--color-secondary);
+  line-height: 24px;
 }
