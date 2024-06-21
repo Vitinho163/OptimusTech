@@ -85,13 +85,13 @@ header {
 }
 
 #sobre_nos span {
-  color: #8E2424;
+  color: var(--color-primary);
   font-weight: 600;
   line-height: 24px;
 }
 
 #sobre_nos h1 {
-  color: #101828;
+  color: var(--color-text-secondary);
   font-size: 48px;
   font-weight: 600;
   line-height: 60px;
@@ -136,4 +136,40 @@ header {
 .metricas_card > p {
   color: var(--color-secondary);
   line-height: 24px;
+}
+
+#vagas {
+  display: flex;
+  padding: 96px 0px;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+#vagas > span {
+  color: var(--color-primary);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  
+  padding: 4px 12px;
+  border-radius: 16px;
+  background: rgba(142, 36, 36, 0.05);
+}
+
+#vagas > h2 {
+  color: var(--color-text-secondary);
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: -0.72px;
+}
+
+#vagas > p {
+  color: var(--color-secondary);
+  font-size: 20px;
+  line-height: 30px;
+}
+
+#vagas > img {
+  margin-top: 44px;
 }
