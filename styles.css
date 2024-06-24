@@ -3,6 +3,8 @@
   --color-secondary: #667085;
   --color-text: #3A404E;
   --color-text-secondary: #101828;
+  --Gray-200: #EAECF0;
+  --Base-White: #FFF;
   --font-family: 'Inter', sans-serif;
   --font-size-normal: 1rem;
   --font-size-large: 1.125rem;
@@ -61,7 +63,7 @@ header {
 .actions-button button {
   background: rgba(255, 255, 255, 1);
   color: var(--color-secondary);
-  font-size: 1rem;
+  font-size: var(--font-size-normal);
   font-weight: 500;
   line-height: var(--line-height-normal);
 
@@ -73,7 +75,7 @@ header {
 
 .actions-button .register {
   background: var(--color-primary);
-  color: #FFFFFF;
+  color: var(--Base-White);
 }
 
 #sobre_nos {
@@ -140,13 +142,20 @@ header {
 
 #vagas {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+
+.talentos {
+  display: flex;
   padding: 6rem 0px;
   flex-direction: column;
   align-items: center;
   gap: 1.25rem;
 }
 
-#vagas > span {
+.talentos > span {
   color: var(--color-primary);
   font-size: 0.875rem;
   font-weight: 500;
@@ -157,19 +166,82 @@ header {
   background: rgba(142, 36, 36, 0.05);
 }
 
-#vagas > h2 {
+.talentos > h2 {
   color: var(--color-text-secondary);
   font-size: 2.25rem;
   font-weight: 600;
   letter-spacing: -0.045rem;
 }
 
-#vagas > p {
+.talentos > p {
   color: var(--color-secondary);
   font-size: 1.25rem;
   line-height: 1.875rem;
 }
 
-#vagas > img {
+.talentos > img {
   margin-top: 2.75rem;
+}
+
+.vagas_abertas {
+  display: flex;
+  padding: 0rem 2rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+
+.vagas_abertas > div {
+  display: flex;
+  width: 48rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.vagas_abertas > div > h2 {
+  color: var(--color-text-secondary);
+
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.875rem;
+}
+
+.items_job {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+  align-self: stretch;
+}
+
+.job {
+  display: flex;
+  padding: 1.5rem 1.5rem 1.75rem 1.5rem;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-self: stretch;
+
+  border-radius: 1rem;
+  border: 1px solid var(--Gray-200);
+}
+
+.job > span {
+  color: var(--color-text-secondary);
+
+  font-size: var(--font-size-large);
+  font-weight: 500;
+  line-height: 1.75rem;
+}
+
+.informacoes {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.informacoes > span {
+  color: var(--color-secondary);
+
+  font-weight: 500;
+  line-height: var(--line-height-normal);
 }
