@@ -246,3 +246,51 @@ header {
   font-weight: 500;
   line-height: var(--line-height-normal);
 }
+
+#depoimento {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 80%;
+  margin: auto auto 6rem auto;
+  background-color: rgba(195, 25, 25, 0.05);
+  padding: 2rem;
+
+  border-radius: 1rem;
+}
+
+#depoimento > span {
+  color: var(--color-primary);
+
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.25rem;
+}
+
+#depoimento > img {
+  width: 48px;
+}
+
+#depoimento > h2 {
+  color: var(--color-text-secondary);
+  font-weight: 500;
+  text-align: center;
+  margin: 2rem 0;
+
+  font-size: 2.25rem;
+  line-height: 2.75rem;
+  letter-spacing: -0.045rem;
+}
+
+#depoimento > span.nome {
+  color: var(--color-text-secondary);
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+
+#depoimento > span.cargo {
+  color: var(--color-secondary);
+  font-weight: 400;
+}
